@@ -24,9 +24,15 @@
         }
 
         /* Header için */
-        .header {2.png
+        .header {
             text-align: center;
             margin-top: 20px;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto; /* Görselin oranlarını korur */
+            max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
         }
 
         /* Hakkımızda bölümü */
@@ -173,12 +179,12 @@
 
     <!-- Header İmajı -->
     <div class="header">
-        <img src="header-image.jpg" alt="Header" width="100%" height="300px">
+        <img src="images/2.png" alt="Header">
     </div>
 
     <!-- Hakkımızda Bölümü -->
     <section class="about">
-        <img src="about-image.jpg" alt="Hakkımızda Fotoğrafı">
+        <img src="images/about-image.jpg" alt="Hakkımızda Fotoğrafı">
         <div class="about-text">
             <h2>Hakkımızda</h2>
             <p>Bu kısma hakkınızda metni ekleyebilirsiniz. Avukatlık kariyeriniz, çalışma prensipleriniz ve diğer bilgileri buraya yazabilirsiniz.</p>
@@ -190,15 +196,15 @@
         <h2>İhtisas Alanlarımız</h2>
         <div class="specialties-container">
             <div class="specialty-item">
-                <img src="alan1.jpg" alt="Alan 1">
+                <img src="images/alan1.jpg" alt="Alan 1">
                 <p>İhtisas Alanı 1 hakkında açıklama.</p>
             </div>
             <div class="specialty-item">
-                <img src="alan2.jpg" alt="Alan 2">
+                <img src="images/alan2.jpg" alt="Alan 2">
                 <p>İhtisas Alanı 2 hakkında açıklama.</p>
             </div>
             <div class="specialty-item">
-                <img src="alan3.jpg" alt="Alan 3">
+                <img src="images/alan3.jpg" alt="Alan 3">
                 <p>İhtisas Alanı 3 hakkında açıklama.</p>
             </div>
         </div>
@@ -208,15 +214,15 @@
     <section class="gallery">
         <h2>Diğer Çalışma Alanlarımız</h2>
         <div class="gallery-container">
-            <img src="galeri1.jpg" alt="Çalışma Alanı 1">
-            <img src="galeri2.jpg" alt="Çalışma Alanı 2">
-            <img src="galeri3.jpg" alt="Çalışma Alanı 3">
-            <img src="galeri4.jpg" alt="Çalışma Alanı 4">
-            <img src="galeri5.jpg" alt="Çalışma Alanı 5">
-            <img src="galeri6.jpg" alt="Çalışma Alanı 6">
-            <img src="galeri7.jpg" alt="Çalışma Alanı 7">
-            <img src="galeri8.jpg" alt="Çalışma Alanı 8">
-            <img src="galeri9.jpg" alt="Çalışma Alanı 9">
+            <img src="images/galeri1.jpg" alt="Çalışma Alanı 1">
+            <img src="images/galeri2.jpg" alt="Çalışma Alanı 2">
+            <img src="images/galeri3.jpg" alt="Çalışma Alanı 3">
+            <img src="images/galeri4.jpg" alt="Çalışma Alanı 4">
+            <img src="images/galeri5.jpg" alt="Çalışma Alanı 5">
+            <img src="images/galeri6.jpg" alt="Çalışma Alanı 6">
+            <img src="images/galeri7.jpg" alt="Çalışma Alanı 7">
+            <img src="images/galeri8.jpg" alt="Çalışma Alanı 8">
+            <img src="images/galeri9.jpg" alt="Çalışma Alanı 9">
         </div>
     </section>
 
