@@ -69,7 +69,7 @@
 
         .specialties h2 {
             color: #000080;
-            font-size: var(--font-size-large);
+            font-size: var(--font-size-medium);
         }
 
         .specialties-container {
