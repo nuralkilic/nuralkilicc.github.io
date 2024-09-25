@@ -37,7 +37,7 @@
             margin-top: 20px;
         }
 
-        .header img {2.png
+        .header img {2.png}
             width: 100%;
             height: auto; /* Görselin oranlarını korur */
             max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
