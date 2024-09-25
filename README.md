@@ -113,17 +113,16 @@
             background-color: #C3B7EA;
             padding: 50px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
         .contact-info {
-            width: 80%;
-            max-width: 600px;
+            width: 45%;
             background-color: #C3B7EA;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-right: 20px;
         }
 
         .contact-info h2 {
@@ -149,14 +148,31 @@
             color: #000080;
         }
 
+        .contact-info .calendar {
+            background-color: #C3B7EA;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-info .calendar h3 {
+            color: #000080;
+            font-size: 16px;
+        }
+
+        .contact-info .calendar p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
         /* Randevu talebi formu */
         .appointment-form {
             display: none; /* Form başlangıçta gizli */
             background-color: #C3B7EA;
             padding: 20px;
             border-radius: 10px;
-            width: 80%;
+            width: 100%;
             max-width: 600px;
+            margin-top: 20px;
         }
 
         .appointment-form h2 {
@@ -209,6 +225,20 @@
         .copyright {
             font-size: 12px;
             margin-top: 10px;
+        }
+
+        /* Harita için stil */
+        .map {
+            width: 45%;
+            height: 300px; /* Yüksekliği ayarlayın */
+            background-color: #fff; /* Harita için arka plan rengi */
+            border-radius: 10px;
+        }
+
+        /* Buton ve form yüksekliği */
+        .form-container {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -271,9 +301,69 @@
     <!-- Müracaat Bölümü -->
     <section class="application">
         <div class="contact-info">
-            <h2>İletişim Bilgilerimiz</h2>
-            <p class="contact-details">
-                <span><strong>İsim:</strong> Nural Kılıç</span>
-                <span><strong>Adres:</strong> Örnek Mahalle, Örnek Cadde, No:1, İstanbul</span>
-                <span><strong>Telefon:</strong> +90 555 555 55 55</span>
-                <
+            <h2>Müracaat</h2>
+            <p>Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.</p>
+            <p>Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler.</p>
+            <p><strong>Av. Nural Kılıç</strong></p>
+            <p><strong>Adres:</strong> Örnek Mahalle, Örnek Cadde, No:1, İstanbul</p>
+            <p><strong>E-posta:</strong> email@example.com</p>
+
+            <div class="calendar">
+                <h3>Mesai Saatleri</h3>
+                <p>Pazartesi-Salı: 07:00-19:00</p>
+                <p>Çarşamba-Perşembe: 07:00-17:00</p>
+                <p>Cuma: 07:00-11:00</p>
+            </div>
+        </div>
+        <div class="map">
+            <!-- Harita kodu buraya eklenecek -->
+        </div>
+    </section>
+
+    <!-- Randevu Talebi Butonu ve Formu -->
+    <div class="form-container">
+        <button class="show-form-button" onclick="toggleForm()">RANDEVU TALEBİ</button>
+        <div class="appointment-form" id="appointment-form">
+            <h2>Randevu Talebi</h2>
+            <form action="mailto:email@example.com" method="post" enctype="text/plain">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="contact-details">
+            <p>Avukat Nural Kılıç</p>
+            <p>Adres: Örnek Mahalle, Örnek Cadde, No:1, İstanbul</p>
+            <p>Telefon: +90 555 555 55 55</p>
+        </div>
+        <div class="copyright">
+            TELİF HAKKI © 2024 AVUKAT NURAL KILIÇ - TÜM HAKLARI SAKLIDIR.
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var form = document.getElementById('appointment-form');
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
