@@ -3,134 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avukat Nural Kılıç</title>
     <style>
+        :root {
+            --font-size-large: 24px;
+            --font-size-medium: 18px;
+            --font-size-small: 16px;
+            --font-size-xsmall: 14px;
+            --font-size-xxsmall: 12px;
+        }
+
         body {
-            font-family: Garamond, serif;
-            background-color: #000000;
-            color: #C3B7EA;
             margin: 0;
-            padding: 0;
+            font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
+            background-color: #333; /* Füme zemin */
+            color: #000080; /* Metin rengi */
+            font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
         }
+
+        /* İnce bar ve başlık */
+        .top-bar {
+            background-color: #000;
+            padding: 10px;
+            color: #C3B7EA;
+            font-size: var(--font-size-medium);
+            text-align: left;
+        }
+
+        /* Header için */
         .header {
-            background-color: #000080;
-            color: #C3B7EA;
-            padding: 10px;
             text-align: center;
-            position: relative;
+            margin-top: 20px;
         }
-        .language-selector {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        .language-selector button {
-            background: none;
-            border: 1px solid #C3B7EA;
-            color: #C3B7EA;
-            padding: 5px 10px;
-            margin-left: 5px;
-            cursor: pointer;
-        }
-        section {
-            padding: 20px;
-        }
-        .about, .specialties, .gallery, .application {
-            margin-bottom: 20px;
-        }
-        .about .left-column, .specialties .column, .gallery .row, .application .contact-info {
-            margin-bottom: 10px;
-        }
-        .application .appointment-form {
-            display: none;
-            background-color: #C3B7EA;
-            color: #000080;
-            padding: 10px;
-            border: 1px solid #000080;
-            margin-top: 10px;
-        }
-        .application .appointment-form input, .application .appointment-form textarea {
+
+        .header img {
             width: 100%;
+            height: auto; /* Görselin oranlarını korur */
+            max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
+        }
+
+        /* Hakkımızda bölümü */
+        .about {
+            background-color: #C3B7EA;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            color: #000080;
+            font-size: var(--font-size-medium);
+            width: 45%;
+        }
+
+        /* İhtisas Alanlarımız bölümü */
+        .specialties {
+            background-color: #C3B7EA;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .specialties h2 {
+            color: #000080;
+            font-size: var(--font-size-large);
+        }
+
+        .specialties-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .specialty-item {
+            text-align: center;
+        }
+
+        .specialty-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             margin-bottom: 10px;
         }
-        .application .appointment-form button {
+
+        /* Diğer Çalışma Alanlarımız bölümü */
+        .gallery {
+            background-color: #C3B7EA;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            color: #000080;
+            font-size: var(--font-size-large);
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Müracaat Bölümü */
+        .application {
+            background-color: #C3B7EA;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            width: 45%;
+            background-color: #C3B7EA;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .contact-info h2 {
+            color: #000080;
+            font-size: var(--font-size-large);
+        }
+
+        .contact-info p {
+            font-size: var(--font-size-small);
+            margin: 10px 0;
+        }
+
+        .contact-info .contact-details {
+            margin: 20px 0;
+        }
+
+        .contact-info .contact-details span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .contact-details span strong {
+            color: #000080;
+        }
+
+        .contact-info .calendar {
+            background-color: #C3B7EA;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-info .calendar h3 {
+            color: #000080;
+            font-size: var(--font-size-medium);
+        }
+
+        .contact-info .calendar p {
+            font-size: var(--font-size-xsmall);
+            margin: 5px 0;
+        }
+
+        /* Randevu talebi formu */
+        .appointment-form {
+            display: none; /* Form başlangıçta gizli */
+            background-color: #C3B7EA;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .appointment-form h2 {
+            color: #000080;
+            font-size: var(--font-size-large);
+        }
+
+        .appointment-form input, .appointment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #000080;
+        }
+
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
             background-color: #000080;
             color: #C3B7EA;
             border: none;
-            padding: 10px;
-            cursor: pointer;
+            border-radius: 5px;
+            font-size: var(--font-size-small);
         }
-        .footer {
+
+        .show-form-button {
+            padding: 10px;
             background-color: #000080;
             color: #C3B7EA;
-            text-align: center;
-            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: var(--font-size-small);
+            cursor: pointer;
         }
+
+        /* Footer */
+        .footer {
+            background-color: #000;
+            color: #C3B7EA;
+            padding: 20px;
+            text-align: center;
+        }
+
         .footer .social-media a {
             color: #C3B7EA;
-            margin: 0 5px;
+            margin: 0 10px;
             text-decoration: none;
+        }
+
+        .footer .contact-details p {
+            margin: 5px 0;
+        }
+
+        .footer .copyright {
+            font-size: var(--font-size-xxsmall);
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1 id="header-title">Avukat Nural Kılıç</h1>
-        <div class="language-selector">
-            <button onclick="changeLanguage('tr')">Türkçe</button>
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('de')">Deutsch</button>
-        </div>
-        <img src="images/header.jpg" alt="Header Image">
-    </header>
+    <!-- İnce bar ve başlık -->
+    <div class="top-bar">
+        AVUKAT NURAL KILIÇ
+    </div>
 
+    <!-- Header -->
+    <div class="header">
+        <img src="images/header.jpg" alt="Header Görseli">
+    </div>
+
+    <!-- Hakkımızda Bölümü -->
     <section class="about">
-        <div class="left-column">
-            <h2 id="about-title">Hakkımızda</h2>
-            <p id="about-text">Bu kısımda şirketinize dair genel bilgiler yer alacak.</p>
-        </div>
-        <div class="right-column">
-            <img src="images/about.jpg" alt="About Image">
+        <img src="images/about.jpg" alt="Hakkımızda Görseli">
+        <div class="about-text">
+            <h2>Hakkımızda</h2>
+            <p>Bizimle iletişime geçmek ve daha fazla bilgi almak için lütfen bizimle iletişime geçin.</p>
+            <p>Yılların tecrübesi ve profesyonelliği ile sizlere en iyi hizmeti sunmayı hedefliyoruz.</p>
         </div>
     </section>
 
+    <!-- İhtisas Alanlarımız Bölümü -->
     <section class="specialties">
-        <h2 id="specialties-title">İhtisas Alanlarımız</h2>
-        <div class="column">
-            <img src="images/specialty1.jpg" alt="Specialty 1">
-            <p id="specialty1-text">İhtisas Alanı 1 açıklaması</p>
-        </div>
-        <div class="column">
-            <img src="images/specialty2.jpg" alt="Specialty 2">
-            <p id="specialty2-text">İhtisas Alanı 2 açıklaması</p>
-        </div>
-        <div class="column">
-            <img src="images/specialty3.jpg" alt="Specialty 3">
-            <p id="specialty3-text">İhtisas Alanı 3 açıklaması</p>
+        <h2>İhtisas Alanlarımız</h2>
+        <div class="specialties-container">
+            <div class="specialty-item">
+                <img src="images/specialty1.jpg" alt="İhtisas Alanı 1">
+                <p>Alan 1 Açıklaması</p>
+            </div>
+            <div class="specialty-item">
+                <img src="images/specialty2.jpg" alt="İhtisas Alanı 2">
+                <p>Alan 2 Açıklaması</p>
+            </div>
+            <div class="specialty-item">
+                <img src="images/specialty3.jpg" alt="İhtisas Alanı 3">
+                <p>Alan 3 Açıklaması</p>
+            </div>
         </div>
     </section>
 
+    <!-- Diğer Çalışma Alanlarımız Bölümü -->
     <section class="gallery">
-        <h2 id="gallery-title">Diğer Çalışma Alanlarımız</h2>
-        <div class="row">
-            <img src="images/gallery1.jpg" alt="Gallery 1">
-            <img src="images/gallery2.jpg" alt="Gallery 2">
-            <img src="images/gallery3.jpg" alt="Gallery 3">
-            <img src="images/gallery4.jpg" alt="Gallery 4">
-            <img src="images/gallery5.jpg" alt="Gallery 5">
-            <img src="images/gallery6.jpg" alt="Gallery 6">
-            <img src="images/gallery7.jpg" alt="Gallery 7">
-            <img src="images/gallery8.jpg" alt="Gallery 8">
-            <img src="images/gallery9.jpg" alt="Gallery 9">
+        <h2>Diğer Çalışma Alanlarımız</h2>
+        <div class="gallery-container">
+            <img src="images/galeri1.jpg" alt="Çalışma Alanı 1">
+            <img src="images/galeri2.jpg" alt="Çalışma Alanı 2">
+            <img src="images/galeri3.jpg" alt="Çalışma Alanı 3">
+            <img src="images/galeri4.jpg" alt="Çalışma Alanı 4">
+            <img src="images/galeri5.jpg" alt="Çalışma Alanı 5">
+            <img src="images/galeri6.jpg" alt="Çalışma Alanı 6">
+            <img src="images/galeri7.jpg" alt="Çalışma Alanı 7">
+            <img src="images/galeri8.jpg" alt="Çalışma Alanı 8">
+            <img src="images/galeri9.jpg" alt="Çalışma Alanı 9">
         </div>
     </section>
 
+    <!-- Müracaat Bölümü -->
     <section class="application">
         <div class="contact-info">
-            <h2 id="contact-title">Müracaat</h2>
-            <p id="contact-text">Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.</p>
-            <p id="contact-hours">Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler.</p>
+            <h2>Müracaat</h2>
+            <p>Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.</p>
+            <p>Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler.</p>
             <p><strong>Av. Nural Kılıç</strong></p>
             <p><strong>Adres:</strong> İstanbul, Türkiye</p>
             <p><strong>E-posta:</strong> example@example.com</p>
@@ -159,6 +330,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="social-media">
             <a href="#">Facebook</a>
@@ -177,65 +349,11 @@
     </footer>
 
     <script>
-        const translations = {
-            tr: {
-                aboutTitle: "Hakkımızda",
-                aboutText: "Bu kısımda şirketinize dair genel bilgiler yer alacak.",
-                specialtiesTitle: "İhtisas Alanlarımız",
-                specialty1Text: "İhtisas Alanı 1 açıklaması",
-                specialty2Text: "İhtisas Alanı 2 açıklaması",
-                specialty3Text: "İhtisas Alanı 3 açıklaması",
-                galleryTitle: "Diğer Çalışma Alanlarımız",
-                contactTitle: "Müracaat",
-                contactText: "Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.",
-                contactHours: "Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler."
-            },
-            en: {
-                aboutTitle: "About Us",
-                aboutText: "This section will contain general information about the company.",
-                specialtiesTitle: "Our Specialties",
-                specialty1Text: "Specialty Area 1 description",
-                specialty2Text: "Specialty Area 2 description",
-                specialty3Text: "Specialty Area 3 description",
-                galleryTitle: "Other Areas of Work",
-                contactTitle: "Contact",
-                contactText: "You can reach us by phone or email, or meet us in person at our office or online.",
-                contactHours: "Our working hours are as follows. Clients who cannot fit within these hours can request to arrange a suitable time."
-            },
-            de: {
-                aboutTitle: "Über uns",
-                aboutText: "In diesem Abschnitt finden Sie allgemeine Informationen über das Unternehmen.",
-                specialtiesTitle: "Unsere Fachgebiete",
-                specialty1Text: "Fachgebiet 1 Beschreibung",
-                specialty2Text: "Fachgebiet 2 Beschreibung",
-                specialty3Text: "Fachgebiet 3 Beschreibung",
-                galleryTitle: "Weitere Arbeitsbereiche",
-                contactTitle: "Kontakt",
-                contactText: "Sie können uns telefonisch oder per E-Mail erreichen oder uns persönlich in unserem Büro oder online treffen.",
-                contactHours: "Unsere Arbeitszeiten sind wie folgt. Kunden, die außerhalb dieser Zeiten keine Termine finden können, können einen geeigneten Zeitpunkt anfragen."
-            }
-        };
-
-        function changeLanguage(lang) {
-            document.getElementById('about-title').innerText = translations[lang].aboutTitle;
-            document.getElementById('about-text').innerText = translations[lang].aboutText;
-            document.getElementById('specialties-title').innerText = translations[lang].specialtiesTitle;
-            document.getElementById('specialty1-text').innerText = translations[lang].specialty1Text;
-            document.getElementById('specialty2-text').innerText = translations[lang].specialty2Text;
-            document.getElementById('specialty3-text').innerText = translations[lang].specialty3Text;
-            document.getElementById('gallery-title').innerText = translations[lang].galleryTitle;
-            document.getElementById('contact-title').innerText = translations[lang].contactTitle;
-            document.getElementById('contact-text').innerText = translations[lang].contactText;
-            document.getElementById('contact-hours').innerText = translations[lang].contactHours;
-        }
-
         function toggleForm() {
-            const form = document.getElementById('appointmentForm');
-            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+            var form = document.getElementById('appointmentForm');
+            form.style.display = form.style.display === 'none' || form.style.display === '' ? 'block' : 'none';
         }
-
-        // Varsayılan dil Türkçe olarak ayarlama
-        changeLanguage('tr');
     </script>
+
 </body>
 </html>
