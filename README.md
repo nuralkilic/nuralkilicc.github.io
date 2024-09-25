@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avukat Nural Kılıç</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tarif:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --font-size-large: 24px;
+            --font-size-medium: 18px;
+            --font-size-small: 16px;
+            --font-size-xsmall: 14px;
+            --font-size-xxsmall: 12px;
+        }
+
         body {
             margin: 0;
-            font-family: 'Tarif', sans-serif; /* Tarif fontunu kullan */
+            font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
             background-color: #333; /* Füme zemin */
             color: #000080; /* Metin rengi */
+            font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
         }
 
         /* İnce bar ve başlık */
@@ -19,7 +27,7 @@
             background-color: #000;
             padding: 10px;
             color: #C3B7EA;
-            font-size: 20px;
+            font-size: var(--font-size-medium);
             text-align: left;
         }
 
@@ -50,7 +58,7 @@
 
         .about-text {
             color: #000080;
-            font-size: 18px;
+            font-size: var(--font-size-medium);
             width: 45%;
         }
 
@@ -63,7 +71,7 @@
 
         .specialties h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
         .specialties-container {
@@ -92,7 +100,7 @@
 
         .gallery h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
         .gallery-container {
@@ -108,7 +116,7 @@
             border-radius: 10px;
         }
 
-        /* Müracaat bölümü */
+        /* Müracaat Bölümü */
         .application {
             background-color: #C3B7EA;
             padding: 50px;
@@ -127,11 +135,11 @@
 
         .contact-info h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
         .contact-info p {
-            font-size: 16px;
+            font-size: var(--font-size-small);
             margin: 10px 0;
         }
 
@@ -156,11 +164,11 @@
 
         .contact-info .calendar h3 {
             color: #000080;
-            font-size: 16px;
+            font-size: var(--font-size-medium);
         }
 
         .contact-info .calendar p {
-            font-size: 14px;
+            font-size: var(--font-size-xsmall);
             margin: 5px 0;
         }
 
@@ -177,7 +185,7 @@
 
         .appointment-form h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
         .appointment-form input, .appointment-form textarea {
@@ -195,7 +203,7 @@
             color: #C3B7EA;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: var(--font-size-small);
         }
 
         .show-form-button {
@@ -204,12 +212,11 @@
             color: #C3B7EA;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: var(--font-size-small);
             cursor: pointer;
-            margin-top: 10px;
         }
 
-        /* Footer ve alt kısımlar */
+        /* Footer */
         .footer {
             background-color: #000;
             color: #C3B7EA;
@@ -217,49 +224,40 @@
             text-align: center;
         }
 
-        .footer a {
+        .footer .social-media a {
             color: #C3B7EA;
             margin: 0 10px;
+            text-decoration: none;
         }
 
-        .copyright {
-            font-size: 12px;
-            margin-top: 10px;
+        .footer .contact-details p {
+            margin: 5px 0;
         }
 
-        /* Harita için stil */
-        .map {
-            width: 45%;
-            height: 300px; /* Yüksekliği ayarlayın */
-            background-color: #fff; /* Harita için arka plan rengi */
-            border-radius: 10px;
-        }
-
-        /* Buton ve form yüksekliği */
-        .form-container {
-            margin-top: 20px;
-            text-align: center;
+        .footer .copyright {
+            font-size: var(--font-size-xxsmall);
         }
     </style>
 </head>
 <body>
 
-    <!-- Üstteki İnce Bar -->
+    <!-- İnce bar ve başlık -->
     <div class="top-bar">
         AVUKAT NURAL KILIÇ
     </div>
 
-    <!-- Header İmajı -->
+    <!-- Header -->
     <div class="header">
-        <img src="images/2.png" alt="Header">
+        <img src="images/header.jpg" alt="Header Görseli">
     </div>
 
     <!-- Hakkımızda Bölümü -->
     <section class="about">
-        <img src="images/about-image.jpg" alt="Hakkımızda Fotoğrafı">
+        <img src="images/about.jpg" alt="Hakkımızda Görseli">
         <div class="about-text">
             <h2>Hakkımızda</h2>
-            <p>Bu kısma hakkınızda metni ekleyebilirsiniz. Avukatlık kariyeriniz, çalışma prensipleriniz ve diğer bilgileri buraya yazabilirsiniz.</p>
+            <p>Bizimle iletişime geçmek ve daha fazla bilgi almak için lütfen bizimle iletişime geçin.</p>
+            <p>Yılların tecrübesi ve profesyonelliği ile sizlere en iyi hizmeti sunmayı hedefliyoruz.</p>
         </div>
     </section>
 
@@ -268,16 +266,16 @@
         <h2>İhtisas Alanlarımız</h2>
         <div class="specialties-container">
             <div class="specialty-item">
-                <img src="images/alan1.jpg" alt="Alan 1">
-                <p>İhtisas Alanı 1 hakkında açıklama.</p>
+                <img src="images/specialty1.jpg" alt="İhtisas Alanı 1">
+                <p>Alan 1 Açıklaması</p>
             </div>
             <div class="specialty-item">
-                <img src="images/alan2.jpg" alt="Alan 2">
-                <p>İhtisas Alanı 2 hakkında açıklama.</p>
+                <img src="images/specialty2.jpg" alt="İhtisas Alanı 2">
+                <p>Alan 2 Açıklaması</p>
             </div>
             <div class="specialty-item">
-                <img src="images/alan3.jpg" alt="Alan 3">
-                <p>İhtisas Alanı 3 hakkında açıklama.</p>
+                <img src="images/specialty3.jpg" alt="İhtisas Alanı 3">
+                <p>Alan 3 Açıklaması</p>
             </div>
         </div>
     </section>
@@ -305,63 +303,55 @@
             <p>Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.</p>
             <p>Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler.</p>
             <p><strong>Av. Nural Kılıç</strong></p>
-            <p><strong>Adres:</strong> Örnek Mahalle, Örnek Cadde, No:1, İstanbul</p>
-            <p><strong>E-posta:</strong> email@example.com</p>
-
+            <p><strong>Adres:</strong> İstanbul, Türkiye</p>
+            <p><strong>E-posta:</strong> example@example.com</p>
             <div class="calendar">
-                <h3>Mesai Saatleri</h3>
+                <h3>Mesai Saatleri:</h3>
                 <p>Pazartesi-Salı: 07:00-19:00</p>
                 <p>Çarşamba-Perşembe: 07:00-17:00</p>
                 <p>Cuma: 07:00-11:00</p>
             </div>
+            <button class="show-form-button" onclick="toggleForm()">Randevu Talebi</button>
+            <div class="appointment-form" id="appointmentForm">
+                <h2>Randevu Talebi Formu</h2>
+                <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                    <label for="name">Adınız:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
         </div>
         <div class="map">
-            <!-- Harita kodu buraya eklenecek -->
+            <!-- Harita yerleştirilecek alan -->
         </div>
     </section>
 
-    <!-- Randevu Talebi Butonu ve Formu -->
-    <div class="form-container">
-        <button class="show-form-button" onclick="toggleForm()">RANDEVU TALEBİ</button>
-        <div class="appointment-form" id="appointment-form">
-            <h2>Randevu Talebi</h2>
-            <form action="mailto:email@example.com" method="post" enctype="text/plain">
-                <label for="name">İsim:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">E-posta:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mesaj:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Gönder</button>
-            </form>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
         <div class="social-media">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
         </div>
         <div class="contact-details">
-            <p>Avukat Nural Kılıç</p>
-            <p>Adres: Örnek Mahalle, Örnek Cadde, No:1, İstanbul</p>
-            <p>Telefon: +90 555 555 55 55</p>
+            <p>İstanbul, Türkiye</p>
+            <p>Telefon: (123) 456-7890</p>
+            <p>E-posta: example@example.com</p>
         </div>
         <div class="copyright">
             TELİF HAKKI © 2024 AVUKAT NURAL KILIÇ - TÜM HAKLARI SAKLIDIR.
         </div>
-    </div>
+    </footer>
 
     <script>
         function toggleForm() {
-            var form = document.getElementById('appointment-form');
-            if (form.style.display === 'none' || form.style.display === '') {
-                form.style.display = 'block';
-            } else {
-                form.style.display = 'none';
-            }
+            var form = document.getElementById('appointmentForm');
+            form.style.display = form.style.display === 'none' || form.style.display === '' ? 'block' : 'none';
         }
     </script>
 
