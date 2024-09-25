@@ -19,10 +19,6 @@
             text-align: center;
             position: relative;
         }
-        .header img {
-            max-width: 100%;
-            height: auto;
-        }
         .language-selector {
             position: absolute;
             top: 10px;
@@ -45,34 +41,6 @@
         .about .left-column, .specialties .column, .gallery .row, .application .contact-info {
             margin-bottom: 10px;
         }
-        .about .left-column, .specialties .column, .gallery .row, .application .contact-info {
-            display: flex;
-            flex-direction: column;
-        }
-        .about .right-column, .specialties .column, .application .map {
-            flex: 1;
-        }
-        .gallery .row img {
-            width: 100%;
-            height: auto;
-        }
-        .footer {
-            background-color: #000080;
-            color: #C3B7EA;
-            text-align: center;
-            padding: 10px;
-        }
-        .footer .social-media a {
-            color: #C3B7EA;
-            margin: 0 5px;
-            text-decoration: none;
-        }
-        .footer .contact-details, .footer .copyright {
-            margin-top: 10px;
-        }
-        .footer .copyright {
-            font-size: 0.8em;
-        }
         .application .appointment-form {
             display: none;
             background-color: #C3B7EA;
@@ -92,12 +60,23 @@
             padding: 10px;
             cursor: pointer;
         }
+        .footer {
+            background-color: #000080;
+            color: #C3B7EA;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer .social-media a {
+            color: #C3B7EA;
+            margin: 0 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <h1>Avukat Nural Kılıç</h1>
+        <h1 id="header-title">Avukat Nural Kılıç</h1>
         <div class="language-selector">
             <button onclick="changeLanguage('tr')">Türkçe</button>
             <button onclick="changeLanguage('en')">English</button>
@@ -135,15 +114,15 @@
     <section class="gallery">
         <h2 id="gallery-title">Diğer Çalışma Alanlarımız</h2>
         <div class="row">
-            <img src="images/galeri1.jpg" alt="Çalışma Alanı 1">
-            <img src="images/galeri2.jpg" alt="Çalışma Alanı 2">
-            <img src="images/galeri3.jpg" alt="Çalışma Alanı 3">
-            <img src="images/galeri4.jpg" alt="Çalışma Alanı 4">
-            <img src="images/galeri5.jpg" alt="Çalışma Alanı 5">
-            <img src="images/galeri6.jpg" alt="Çalışma Alanı 6">
-            <img src="images/galeri7.jpg" alt="Çalışma Alanı 7">
-            <img src="images/galeri8.jpg" alt="Çalışma Alanı 8">
-            <img src="images/galeri9.jpg" alt="Çalışma Alanı 9">
+            <img src="images/gallery1.jpg" alt="Gallery 1">
+            <img src="images/gallery2.jpg" alt="Gallery 2">
+            <img src="images/gallery3.jpg" alt="Gallery 3">
+            <img src="images/gallery4.jpg" alt="Gallery 4">
+            <img src="images/gallery5.jpg" alt="Gallery 5">
+            <img src="images/gallery6.jpg" alt="Gallery 6">
+            <img src="images/gallery7.jpg" alt="Gallery 7">
+            <img src="images/gallery8.jpg" alt="Gallery 8">
+            <img src="images/gallery9.jpg" alt="Gallery 9">
         </div>
     </section>
 
@@ -258,6 +237,5 @@
         // Varsayılan dil Türkçe olarak ayarlama
         changeLanguage('tr');
     </script>
-
 </body>
 </html>
