@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +11,11 @@
             --font-size-xsmall: 10px;
             --font-size-xxsmall: 18px;
         }
-
         body {
             margin: 0;
             font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
             background-color: #333; /* Füme zemin */
-            color: #000000; /* Metin rengi */
+            color: #000080; /* Metin rengi */
             font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
         }
 
@@ -37,13 +34,13 @@
             margin-top: 20px;
         }
 
-        .header img {2.png}
+        .header img {
             width: 100%;
             height: auto; /* Görselin oranlarını korur */
             max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
         }
 
-        /* HAKKIMIZDA bölümü */
+        /* Hakkımızda bölümü */
         .about {
             background-color: #C3B7EA;
             padding: 50px;
@@ -51,7 +48,7 @@
             justify-content: space-between;
         }
 
-        .about img {1726756804715.jpg}
+        .about img {
             width: 45%;
             border-radius: 10px;
         }
