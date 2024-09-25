@@ -7,7 +7,7 @@
     <title>Avukat Nural Kılıç</title>
     <style>
         :root {
-            --font-size-large: 18px;
+            --font-size-large: 16px;
             --font-size-medium: 14px;
             --font-size-small: 12px;
             --font-size-xsmall: 10px;
