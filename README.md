@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +56,6 @@
         }
 
         .about-text {
-
             color: #000080;
             font-size: var(--font-size-medium);
             width: 45%;
@@ -69,7 +70,7 @@
 
         .specialties h2 {
             color: #000080;
-            font-size: var(--font-size-small);
+            font-size: var(--font-size-medium);
         }
 
         .specialties-container {
@@ -264,26 +265,32 @@
         <div class="specialties-container">
             <div class="specialty-item">
                 <img src="images/idare.png" alt="İhtisas Alanı 1">
-                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların durdurulması, iptali ve bu bağlamda uğradığınız zararların tazmini için gerekli işleri, idârî başvurularınızın ilgili İdâre'ye (kamu kurum ve kuruluşları) yöneltilmesinden, iptal davalarına ve tam yargı davalarına kadar kapsayacak şekilde ele alırız.</p>
+                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların durdurulması, iptali ve bu bağlamda uğradığınız zararların tazmini için gerekli işleri, idârî başvurularınızın ilgili İdâre'ye (kamu kurum ve kuruluşları) yöneltilmesinden, iptal davalarına ve tam yargı davalarına kadar her aşamasını yürütüyoruz.</p>
             </div>
             <div class="specialty-item">
-                <img src="images/vergi.png" alt="İhtisas Alanı 2">
-                <p>Mali yükümlülükler ve idârî vergi uygulamaları karşısında müvekkillerimizin hak ve menfaatlerini korumak, varsa fazladan ödedikleri vergilerin geri alınması hususunda çözüm üretiriz. Vergi cezalarına, tarh edilen vergi borçlarına karşı Vergi Mahkemelerinde dava açabiliriz.</p>
+                <img src="images/bireyselbaşvuru.png" alt="İhtisas Alanı 2">
+                <p>Bireysel başvuru olarak adlandırılan Anayasa Mahkemesi başvuruları, Avrupa İnsan Hakları Mahkemesi başvuruları ve İçtihatların denetlenmesi hizmetini de vermekteyiz.</p>
             </div>
             <div class="specialty-item">
-                <img src="images/tuketici.png" alt="İhtisas Alanı 3">
-                <p>Ticarî faaliyetler sebebiyle yaşadığınız mağduriyetlerin giderilmesi, bozulan eşya veya tükettiğiniz ayıplı malın değişimi ve iadesi ya da mal/hizmet karşılığında ödediğiniz fazla ücretin geri alınması gibi hususlarda başvurularınızı tüketici hakem heyetlerine ve mahkemelerine taşırız.</p>
+                <img src="images/önleme.png" alt="İhtisas Alanı 3">
+                <p>Sözleşmelerin hukuka uygun olarak hazırlanması, mahkemelerden ihtiyati tedbir kararlarının alınması ve uygulanması gibi hukuki önlemleri almakta, müvekkillerimizi en iyi şekilde temsil etmekteyiz.</p>
             </div>
         </div>
     </section>
 
     <!-- Diğer Çalışma Alanlarımız Bölümü -->
     <section class="gallery">
-        <h2>Diğer Çalışma Alanlarımız</h2>
+        <h2>DİĞER ÇALIŞMA ALANLARIMIZ</h2>
         <div class="gallery-container">
-            <img src="images/bosanma.png" alt="Boşanma Hukuku">
-            <img src="images/ceza.png" alt="Ceza Hukuku">
-            <img src="images/kitap.png" alt="Sözleşme Hukuku">
+            <img src="images/1bilişim.png" alt="Çalışma Alanı 1">
+            <img src="images/2imar.png" alt="Çalışma Alanı 2">
+            <img src="images/3iş.png" alt="Çalışma Alanı 3">
+            <img src="images/4kamuihale.png" alt="Çalışma Alanı 4">
+            <img src="images/5ekonomiceza.png" alt="Çalışma Alanı 5">
+            <img src="images/6çocuk.png" alt="Çalışma Alanı 6">
+            <img src="images/7gayrimenkul.png" alt="Çalışma Alanı 7">
+            <img src="images/8tazminat.png" alt="Çalışma Alanı 8">
+            <img src="images/9sağlık.png" alt="Çalışma Alanı 9">
         </div>
     </section>
 
@@ -291,58 +298,50 @@
     <section class="application">
         <div class="contact-info">
             <h2>MÜRÂCAAT</h2>
-            <p>Avukat Nural Kılıç'a müracaat için aşağıdaki iletişim bilgilerinden ulaşabilir veya randevu talep edebilirsiniz:</p>
+            <p>Adana, Türkiye</p>
             <div class="contact-details">
-                <span><strong>Adana Barosu:</strong> Reşatbey Mah. Atatürk Cad. No: 15, Adana, Turkey</span>
-                <span><strong>Telefon:</strong> +90 530 000 00 00</span>
-                <span><strong>E-Posta:</strong> nural@example.com</span>
+                <span><strong>Adres:</strong> Örnek Mahalle, Örnek Sokak No: 1, Adana</span>
+                <span><strong>Telefon:</strong> (0322) 000 00 00</span>
+                <span><strong>Email:</strong> info@avukatnuralkilic.com</span>
             </div>
             <div class="calendar">
-                <h3>Çalışma Saatleri:</h3>
-                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p>Cumartesi: 10:00 - 14:00</p>
-                <p>Pazar: Kapalı</p>
+                <h3>Randevu Talebi</h3>
+                <p>Randevu almak için lütfen <button class="show-form-button" onclick="document.querySelector('.appointment-form').style.display='block'">buraya tıklayın</button>.</p>
             </div>
-            <!-- Randevu Talebi Butonu -->
-            <button class="show-form-button" onclick="document.querySelector('.appointment-form').style.display='block';">
-                RANDEVU TALEBİ
-            </button>
+            <div id="map" style="width: 100%; height: 300px;">
+                <iframe src="https://maps.app.goo.gl/Su5JMy5Dwyz5Monn9" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
 
-        <!-- Google Haritalar Bölümü -->
-        <iframe src="https://maps.app.goo.gl/Su5JMy5Dwyz5Monn9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <!-- Randevu Talebi Formu -->
-    <section class="appointment-form">
-        <h2>Randevu Talep Formu</h2>
-        <form action="submit-appointment.php" method="post">
-            <input type="text" name="name" placeholder="Ad Soyad" required>
-            <input type="email" name="email" placeholder="E-Posta" required>
-            <textarea name="message" rows="5" placeholder="Randevu Talebiniz" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
+        <!-- Randevu Talebi Formu -->
+        <div class="appointment-form">
+            <h2>Randevu Talebi Formu</h2>
+            <form>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" required>
+                <input type="text" name="address" placeholder="Adresiniz" required>
+                <input type="tel" name="phone" placeholder="Telefon Numaranız" required>
+                <textarea name="message" placeholder="Mesajınız" rows="4" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="social-media">
-            <a href="https://www.facebook.com/nuralkilic">Facebook</a>
-            <a href="https://twitter.com/nuralkilic">Twitter</a>
-            <a href="https://instagram.com/nuralkilic">Instagram</a>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>İletişim: +90 530 000 00 00 | E-Posta: nural@example.com</p>
+            <p>Adana, Türkiye</p>
+            <p>Email: info@avukatnuralkilic.com</p>
+            <p>Telefon: (0322) 000 00 00</p>
         </div>
         <div class="copyright">
-            © 2024 Avukat Nural Kılıç. Tüm Hakları Saklıdır.
+            &copy; 2024 Avukat Nural Kılıç. Tüm hakları saklıdır.
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.show-form-button').addEventListener('click', function() {
-            document.querySelector('.appointment-form').style.display = 'block';
-        });
-    </script>
-
+    
 </body>
+</html>
