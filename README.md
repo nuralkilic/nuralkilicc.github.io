@@ -1,4 +1,3 @@
-# nuralkilic.github.io
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -6,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avukat Nural Kılıç</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tarif:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Tarif', sans-serif; /* Tarif fontunu kullan */
             background-color: #333; /* Füme zemin */
             color: #000080; /* Metin rengi */
         }
