@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avukat Nural Kılıç</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tarif:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --font-size-large: 14px;
+            --font-size-medium: 12px;
+            --font-size-small: 10px;
+            --font-size-xsmall: 8px;
+            --font-size-xxsmall: 7px;
+        }
         body {
             margin: 0;
-            font-family: 'Tarif', sans-serif; /* Tarif fontunu kullan */
+            font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
             background-color: #333; /* Füme zemin */
             color: #000080; /* Metin rengi */
+            font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
         }
 
         /* İnce bar ve başlık */
@@ -19,7 +24,7 @@
             background-color: #000;
             padding: 10px;
             color: #C3B7EA;
-            font-size: 20px;
+            font-size: var(--font-size-medium);
             text-align: left;
         }
 
@@ -35,7 +40,7 @@
             max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
         }
 
-        /* Hakkımızda bölümü */
+        /* HAKKIMIZDA bölümü */
         .about {
             background-color: #C3B7EA;
             padding: 50px;
@@ -49,12 +54,13 @@
         }
 
         .about-text {
+
             color: #000080;
-            font-size: 18px;
+            font-size: var(--font-size-medium);
             width: 45%;
         }
 
-        /* İhtisas Alanlarımız bölümü */
+        /* İHTİSAS ALANLARIMIZ bölümü */
         .specialties {
             background-color: #C3B7EA;
             padding: 50px;
@@ -63,7 +69,7 @@
 
         .specialties h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-medium);
         }
 
         .specialties-container {
@@ -83,7 +89,7 @@
             margin-bottom: 10px;
         }
 
-        /* Diğer Çalışma Alanlarımız bölümü */
+        /* DİĞER ÇALIŞMA ALANLARIMIZ bölümü */
         .gallery {
             background-color: #C3B7EA;
             padding: 50px;
@@ -92,7 +98,7 @@
 
         .gallery h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
         .gallery-container {
@@ -108,27 +114,79 @@
             border-radius: 10px;
         }
 
-        /* Müracaat bölümü */
+        /* MÜRÂCAAT Bölümü */
         .application {
             background-color: #C3B7EA;
             padding: 50px;
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
         }
 
-        .contact-form {
+        .contact-info {
             width: 45%;
             background-color: #C3B7EA;
             padding: 20px;
             border-radius: 10px;
+            margin-right: 20px;
         }
 
-        .contact-form h2 {
+        .contact-info h2 {
             color: #000080;
-            font-size: 24px;
+            font-size: var(--font-size-large);
         }
 
-        .contact-form input, .contact-form textarea {
+        .contact-info p {
+            font-size: var(--font-size-small);
+            margin: 10px 0;
+        }
+
+        .contact-info .contact-details {
+            margin: 20px 0;
+        }
+
+        .contact-info .contact-details span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .contact-details span strong {
+            color: #000080;
+        }
+
+        .contact-info .calendar {
+            background-color: #C3B7EA;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-info .calendar h3 {
+            color: #000080;
+            font-size: var(--font-size-medium);
+        }
+
+        .contact-info .calendar p {
+            font-size: var(--font-size-medium);
+            margin: 5px 0;
+        }
+
+        /* Randevu talebi formu */
+        .appointment-form {
+            display: none; /* Form başlangıçta gizli */
+            background-color: #C3B7EA;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .appointment-form h2 {
+            color: #000080;
+            font-size: var(--font-size-large);
+        }
+
+        .appointment-form input, .appointment-form textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -136,22 +194,27 @@
             border: 1px solid #000080;
         }
 
-        .contact-form button {
+        .appointment-form button {
             width: 100%;
             padding: 10px;
             background-color: #000080;
             color: #C3B7EA;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: var(--font-size-small);
         }
 
-        .map {
-            width: 45%;
-            text-align: center;
+        .show-form-button {
+            padding: 10px;
+            background-color: #000080;
+            color: #C3B7EA;
+            border: none;
+            border-radius: 5px;
+            font-size: var(--font-size-small);
+            cursor: pointer;
         }
 
-        /* Footer ve alt kısımlar */
+        /* Footer */
         .footer {
             background-color: #000;
             color: #C3B7EA;
@@ -159,35 +222,39 @@
             text-align: center;
         }
 
-        .footer a {
+        .footer .social-media a {
             color: #C3B7EA;
             margin: 0 10px;
+            text-decoration: none;
         }
 
-        .copyright {
-            font-size: 12px;
-            margin-top: 10px;
+        .footer .contact-details p {
+            margin: 5px 0;
+        }
+
+        .footer .copyright {
+            font-size: var(--font-size-xxsmall);
         }
     </style>
 </head>
 <body>
 
-    <!-- Üstteki İnce Bar -->
+    <!-- İnce bar ve başlık -->
     <div class="top-bar">
         AVUKAT NURAL KILIÇ
     </div>
 
-    <!-- Header İmajı -->
+    <!-- Header -->
     <div class="header">
-        <img src="images/2.png" alt="Header">
+        <img src="images/2.png" alt="Header Görseli">
     </div>
 
     <!-- Hakkımızda Bölümü -->
     <section class="about">
-        <img src="images/about-image.jpg" alt="Hakkımızda Fotoğrafı">
+        <img src="images/1726756804715.jpg" alt="Hakkımızda Görseli">
         <div class="about-text">
             <h2>Hakkımızda</h2>
-            <p>Bu kısma hakkınızda metni ekleyebilirsiniz. Avukatlık kariyeriniz, çalışma prensipleriniz ve diğer bilgileri buraya yazabilirsiniz.</p>
+            <p>Avukat Nural Kılıç ilk ve ortaöğrenimini Adana'da görmüş, İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Yasal stajını tamamlayıp avukatlık ruhsatnamesini alarak kıdemli meslektaşlarının hukuk bürolarında tecrübe kazandıktan sonra vekillik mesleğini kendi namına yapmaya başlamıştır. Mesleğinin ilk yıllarından itibaren hak odaklı çalışmalarda da yer almaya çabalayan Kılıç, gerek Baro bünyesinde, gerek meslekî temsiliyetle kamu kurum ve kuruluşları, sivil toplum örgütleri ve özel hukuk kişileri ile bir arada, birçok çalışmada bulunmuştur. Halihazırda Türk Alman Üniversitesi Sosyal Bilimler Enstitüsü'nde Kamu Hukuku Yüksek Lisans Programı'nın tez aşamasındaki öğrencilerinden biridir. Almanca ve İngilizce bilir. İstanbul Barosu'nda 5 yıllık kıdemini tamamladıktan sonra, 7255 sicil numarasıyla naklolduğu Adana Barosu'nda, mesleğini, benimsediği değerlerden taviz vermemeye ve her gün kendini geliştirmeye çabalayarak sürdürür.</p>
         </div>
     </section>
 
@@ -196,16 +263,16 @@
         <h2>İhtisas Alanlarımız</h2>
         <div class="specialties-container">
             <div class="specialty-item">
-                <img src="images/alan1.jpg" alt="Alan 1">
-                <p>İhtisas Alanı 1 hakkında açıklama.</p>
+                <img src="images/idare.png" alt="İhtisas Alanı 1">
+                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların durdurulması, iptali ve bu bağlamda uğradığınız zararların tazmini için gerekli işleri, idârî başvurularınızın ilgili İdâre'ye (kamu kurum ve kuruluşları) yöneltilmesinden, iptal davalarına ve tam yargı davalarına kadar kapsayacak şekilde ele alırız.</p>
             </div>
             <div class="specialty-item">
-                <img src="images/alan2.jpg" alt="Alan 2">
-                <p>İhtisas Alanı 2 hakkında açıklama.</p>
+                <img src="images/vergi.png" alt="İhtisas Alanı 2">
+                <p>Mali yükümlülükler ve idârî vergi uygulamaları karşısında müvekkillerimizin hak ve menfaatlerini korumak, varsa fazladan ödedikleri vergilerin geri alınması hususunda çözüm üretiriz. Vergi cezalarına, tarh edilen vergi borçlarına karşı Vergi Mahkemelerinde dava açabiliriz.</p>
             </div>
             <div class="specialty-item">
-                <img src="images/alan3.jpg" alt="Alan 3">
-                <p>İhtisas Alanı 3 hakkında açıklama.</p>
+                <img src="images/tuketici.png" alt="İhtisas Alanı 3">
+                <p>Ticarî faaliyetler sebebiyle yaşadığınız mağduriyetlerin giderilmesi, bozulan eşya veya tükettiğiniz ayıplı malın değişimi ve iadesi ya da mal/hizmet karşılığında ödediğiniz fazla ücretin geri alınması gibi hususlarda başvurularınızı tüketici hakem heyetlerine ve mahkemelerine taşırız.</p>
             </div>
         </div>
     </section>
@@ -214,47 +281,68 @@
     <section class="gallery">
         <h2>Diğer Çalışma Alanlarımız</h2>
         <div class="gallery-container">
-            <img src="images/galeri1.jpg" alt="Çalışma Alanı 1">
-            <img src="images/galeri2.jpg" alt="Çalışma Alanı 2">
-            <img src="images/galeri3.jpg" alt="Çalışma Alanı 3">
-            <img src="images/galeri4.jpg" alt="Çalışma Alanı 4">
-            <img src="images/galeri5.jpg" alt="Çalışma Alanı 5">
-            <img src="images/galeri6.jpg" alt="Çalışma Alanı 6">
-            <img src="images/galeri7.jpg" alt="Çalışma Alanı 7">
-            <img src="images/galeri8.jpg" alt="Çalışma Alanı 8">
-            <img src="images/galeri9.jpg" alt="Çalışma Alanı 9">
+            <img src="images/bosanma.png" alt="Boşanma Hukuku">
+            <img src="images/ceza.png" alt="Ceza Hukuku">
+            <img src="images/kitap.png" alt="Sözleşme Hukuku">
         </div>
     </section>
 
     <!-- Müracaat Bölümü -->
     <section class="application">
-        <div class="contact-form">
-            <h2>Müracaat</h2>
-            <input type="text" placeholder="İsim">
-            <input type="text" placeholder="Adres">
-            <input type="email" placeholder="E-posta">
-            <input type="tel" placeholder="Telefon">
-            <textarea rows="4" placeholder="Mesajınız"></textarea>
-            <button>Randevu Talebi</button>
+        <div class="contact-info">
+            <h2>MÜRÂCAAT</h2>
+            <p>Avukat Nural Kılıç'a müracaat için aşağıdaki iletişim bilgilerinden ulaşabilir veya randevu talep edebilirsiniz:</p>
+            <div class="contact-details">
+                <span><strong>Adana Barosu:</strong> Reşatbey Mah. Atatürk Cad. No: 15, Adana, Turkey</span>
+                <span><strong>Telefon:</strong> +90 530 000 00 00</span>
+                <span><strong>E-Posta:</strong> nural@example.com</span>
+            </div>
+            <div class="calendar">
+                <h3>Çalışma Saatleri:</h3>
+                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                <p>Cumartesi: 10:00 - 14:00</p>
+                <p>Pazar: Kapalı</p>
+            </div>
+            <!-- Randevu Talebi Butonu -->
+            <button class="show-form-button" onclick="document.querySelector('.appointment-form').style.display='block';">
+                RANDEVU TALEBİ
+            </button>
         </div>
-        <div class="map">
-            <!-- Harita burada yer alacak -->
-            <h2>Konumumuz</h2>
-            <iframe src="https://www.google.com/maps/embed" width="100%" height="300px" style="border:0;" allowfullscreen></iframe>
-        </div>
+
+        <!-- Google Haritalar Bölümü -->
+        <iframe src="https://maps.app.goo.gl/Su5JMy5Dwyz5Monn9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
-    <!-- Footer Bölümü -->
-    <div class="footer">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-        <p>Avukat Nural Kılıç - Adres Bilgileri</p>
-        <p>Telefon: +90 555 555 55 55</p>
-        <div class="copyright">
-            TELİF HAKKI © 2024 AVUKAT NURAL KILIÇ - TÜM HAKLARI SAKLIDIR.
+    <!-- Randevu Talebi Formu -->
+    <section class="appointment-form">
+        <h2>Randevu Talep Formu</h2>
+        <form action="submit-appointment.php" method="post">
+            <input type="text" name="name" placeholder="Ad Soyad" required>
+            <input type="email" name="email" placeholder="E-Posta" required>
+            <textarea name="message" rows="5" placeholder="Randevu Talebiniz" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/nuralkilic">Facebook</a>
+            <a href="https://twitter.com/nuralkilic">Twitter</a>
+            <a href="https://instagram.com/nuralkilic">Instagram</a>
         </div>
-    </div>
+        <div class="contact-details">
+            <p>İletişim: +90 530 000 00 00 | E-Posta: nural@example.com</p>
+        </div>
+        <div class="copyright">
+            © 2024 Avukat Nural Kılıç. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.show-form-button').addEventListener('click', function() {
+            document.querySelector('.appointment-form').style.display = 'block';
+        });
+    </script>
 
 </body>
-</html>
