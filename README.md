@@ -24,7 +24,7 @@
         }
 
         /* Header için */
-        .header {
+        .header {2.png
             text-align: center;
             margin-top: 20px;
         }
