@@ -114,7 +114,7 @@
             border-radius: 10px;
         }
 
-        /* MÜRACAAT Bölümü */
+        /* MÜRÂCAAT Bölümü */
         .application {
             background-color: #C3B7EA;
             padding: 50px;
