@@ -265,15 +265,15 @@
         <div class="specialties-container">
             <div class="specialty-item">
                 <img src="images/specialty1.jpg" alt="İhtisas Alanı 1">
-                <p>Alan 1 Açıklaması</p>
+                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların durdurulması, iptali ve bu bağlamda uğradığınız zararların tazmini için gerekli işleri, idârî başvurularınızın ilgili İdâre'ye (kamu kurum ve kuruluşları) yöneltilmesinden, iptal davalarına ve tam yargı davalarına kadar titizlikle yürütüyoruz.</p>
             </div>
             <div class="specialty-item">
                 <img src="images/specialty2.jpg" alt="İhtisas Alanı 2">
-                <p>Alan 2 Açıklaması</p>
+                <p>Anayasa Mahkemesi, Kamu Denetçiliği Kurumu, TİHEK ve Avrupa İnsan Hakları Mahkemesi başta olmak üzere uluslararası yargı organları önünde temel hak ve özgürlüklerinize ilişkin bireysel başvurularınızı her gün daha çok ihtisaslaşarak takip ediyoruz.</p>
             </div>
             <div class="specialty-item">
                 <img src="images/specialty3.jpg" alt="İhtisas Alanı 3">
-                <p>Alan 3 Açıklaması</p>
+                <p>Uyuşmazlıkların en kıymetli ve geri getirilemez eşyadan olan vakit başta olmak üzere nelere mâlolabileceğinin şuuruyla, haksızlar ve/veya zarar doğmadan yahut derinleşmeden önce "önleme" ilkesinin uygulanmasına çabalıyor, bunun için vazedilmiş hukukî prosedürleri işletiyoruz.</p>
             </div>
         </div>
     </section>
