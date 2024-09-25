@@ -18,7 +18,7 @@
             margin: 0;
             font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
             background-color: #333; /* Füme zemin */
-            color: #000080; /* Metin rengi */
+            color: #000000; /* Metin rengi */
             font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
         }
 
@@ -28,7 +28,7 @@
             padding: 10px;
             color: #C3B7EA;
             font-size: var(--font-size-medium);
-            text-align: left;
+            text-align: middle;
         }
 
         /* Header için */
