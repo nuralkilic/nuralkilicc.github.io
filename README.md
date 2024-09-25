@@ -60,7 +60,7 @@
             width: 45%;
         }
 
-        /* İhtisas Alanlarımız bölümü */
+        /* İHTİSAS ALANLARIMIZ bölümü */
         .specialties {
             background-color: #C3B7EA;
             padding: 50px;
@@ -89,7 +89,7 @@
             margin-bottom: 10px;
         }
 
-        /* Diğer Çalışma Alanlarımız bölümü */
+        /* DİĞER ÇALIŞMA ALANLARIMIZ bölümü */
         .gallery {
             background-color: #C3B7EA;
             padding: 50px;
@@ -114,7 +114,7 @@
             border-radius: 10px;
         }
 
-        /* Müracaat Bölümü */
+        /* MÜRACAAT Bölümü */
         .application {
             background-color: #C3B7EA;
             padding: 50px;
