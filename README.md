@@ -166,7 +166,7 @@
         }
 
         .contact-info .calendar p {
-            font-size: var(--font-size-xsmall);
+            font-size: var(--font-size-medium);
             margin: 5px 0;
         }
 
