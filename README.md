@@ -43,7 +43,7 @@
             max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
         }
 
-        /* Hakkımızda bölümü */
+        /* HAKKIMIZDA bölümü */
         .about {
             background-color: #C3B7EA;
             padding: 50px;
@@ -51,7 +51,7 @@
             justify-content: space-between;
         }
 
-        .about img {
+        .about img {1726756804715.jpg}
             width: 45%;
             border-radius: 10px;
         }
