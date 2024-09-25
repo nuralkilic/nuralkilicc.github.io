@@ -28,7 +28,7 @@
             padding: 10px;
             color: #C3B7EA;
             font-size: var(--font-size-medium);
-            text-align: middle;
+            text-align: left;
         }
 
         /* Header için */
@@ -37,7 +37,7 @@
             margin-top: 20px;
         }
 
-        .header img {
+        .header img {2.png
             width: 100%;
             height: auto; /* Görselin oranlarını korur */
             max-height: 300px; /* İsteğe bağlı, yüksekliği sınırlamak için */
