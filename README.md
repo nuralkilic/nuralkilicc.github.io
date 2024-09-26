@@ -13,7 +13,7 @@
         }
         body {
             margin: 0;
-            font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
+            font-family: 'Garamond', 'Times New Roman', serif;
             background-color: #333; /* Füme zemin */
             color: #000080; /* Metin rengi */
             font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
@@ -54,7 +54,6 @@
         }
 
         .about-text {
-
             color: #000080;
             font-size: var(--font-size-medium);
             width: 45%;
@@ -246,16 +245,15 @@
 
     <!-- Header -->
     <div class="header">
-        <img src="images/header.jpg" alt="Header Görseli">
+        <img src="assets/images/header.jpg" alt="Header Görseli">
     </div>
 
     <!-- Hakkımızda Bölümü -->
     <section class="about">
-        <img src="images/about.jpg" alt="Hakkımızda Görseli">
+        <img src="assets/images/about.jpg" alt="Hakkımızda Görseli">
         <div class="about-text">
             <h2>Hakkımızda</h2>
-            <p>Avukat Nural Kılıç ilk ve ortaöğrenimini Adana'da görmüş, İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Yasal stajını tamamlayıp avukatlık ruhsatnamesini alarak kıdemli meslektaşlarının hukuk bürolarında tecrübe kazandıktan sonra vekillik mesleğini kendi namına yapmaya başlamıştır. Mesleğinin ilk yıllarından itibaren hak odaklı çalışmalarda da yer almaya çabalayan Kılıç, gerek Baro bünyesinde, gerek meslekî temsiliyetle kamu kurum ve kuruluşları, sivil toplum örgütleri ve özel hukuk kişileri ile bir arada, birçok çalışmada bulunmuştur. Halihazırda Türk Alman Üniversitesi Sosyal Bilimler Enstitüsü'nde Kamu Hukuku Yüksek Lisans Programı'nın tez aşamasındaki öğrencilerinden biridir. Almanca ve İngilizce bilir. İstanbul Barosu'nda 5 yıllık kıdemini tamamladıktan sonra, 7255 sicil numarasıyla naklolduğu Adana Barosu'nda, mesleğini, benimsediği değerlerden taviz vermemeye ve her gün kendini geliştirmeye çabalayarak sürdürür.</p>
-            
+            <p>Avukat Nural Kılıç ilk ve ortaöğrenimini Adana'da görmüş, İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olmuştur...</p>
         </div>
     </section>
 
@@ -264,16 +262,16 @@
         <h2>İhtisas Alanlarımız</h2>
         <div class="specialties-container">
             <div class="specialty-item">
-                <img src="images/specialty1.jpg" alt="İhtisas Alanı 1">
-                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların durdurulması, iptali ve bu bağlamda uğradığınız zararların tazmini için gerekli işleri, idârî başvurularınızın ilgili İdâre'ye (kamu kurum ve kuruluşları) yöneltilmesinden, iptal davalarına ve tam yargı davalarına kadar titizlikle yürütüyoruz.</p>
+                <img src="assets/images/specialty1.jpg" alt="İhtisas Alanı 1">
+                <p>İdarî faaliyetler sebebiyle maruz kaldığınız haksızlıkların...</p>
             </div>
             <div class="specialty-item">
-                <img src="images/specialty2.jpg" alt="İhtisas Alanı 2">
-                <p>Anayasa Mahkemesi, Kamu Denetçiliği Kurumu, TİHEK ve Avrupa İnsan Hakları Mahkemesi başta olmak üzere uluslararası yargı organları önünde temel hak ve özgürlüklerinize ilişkin bireysel başvurularınızı her gün daha çok ihtisaslaşarak takip ediyoruz.</p>
+                <img src="assets/images/specialty2.jpg" alt="İhtisas Alanı 2">
+                <p>Anayasa Mahkemesi, Kamu Denetçiliği Kurumu, TİHEK ve Avrupa İnsan Hakları...</p>
             </div>
             <div class="specialty-item">
-                <img src="images/specialty3.jpg" alt="İhtisas Alanı 3">
-                <p>Uyuşmazlıkların en kıymetli ve geri getirilemez eşyadan olan vakit başta olmak üzere nelere mâlolabileceğinin şuuruyla, haksızlar ve/veya zarar doğmadan yahut derinleşmeden önce "önleme" ilkesinin uygulanmasına çabalıyor, bunun için vazedilmiş hukukî prosedürleri işletiyoruz.</p>
+                <img src="assets/images/specialty3.jpg" alt="İhtisas Alanı 3">
+                <p>Hukuksal Danışmanlık Hizmetleri</p>
             </div>
         </div>
     </section>
@@ -282,77 +280,64 @@
     <section class="gallery">
         <h2>Diğer Çalışma Alanlarımız</h2>
         <div class="gallery-container">
-            <img src="images/galeri1.jpg" alt="Çalışma Alanı 1">
-            <img src="images/galeri2.jpg" alt="Çalışma Alanı 2">
-            <img src="images/galeri3.jpg" alt="Çalışma Alanı 3">
-            <img src="images/galeri4.jpg" alt="Çalışma Alanı 4">
-            <img src="images/galeri5.jpg" alt="Çalışma Alanı 5">
-            <img src="images/galeri6.jpg" alt="Çalışma Alanı 6">
-            <img src="images/galeri7.jpg" alt="Çalışma Alanı 7">
-            <img src="images/galeri8.jpg" alt="Çalışma Alanı 8">
-            <img src="images/galeri9.jpg" alt="Çalışma Alanı 9">
+            <img src="assets/images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="assets/images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="assets/images/gallery3.jpg" alt="Gallery Image 3">
         </div>
     </section>
 
     <!-- Müracaat Bölümü -->
     <section class="application">
         <div class="contact-info">
-            <h2>Müracaat</h2>
-            <p>Telefon ve e-posta yoluyla ulaşabilir yahut büromuzda veya çevrimiçi yollarla yüz yüze görüşebilirsiniz.</p>
-
-            <p>Mesai saatlerimiz aşağıdaki gibidir. Vakti uymayacak danışanlarımız ortak müsait vaktin tayini için talepte bittabi bulunabilirler.</p>
-            <p><strong>Av. Nural Kılıç</strong></p>
-            <p><strong>Adres:</strong> İstanbul, Türkiye</p>
-            <p><strong>E-posta:</strong> example@example.com</p>
-            <div class="calendar">
-                <h3>Mesai Saatleri:</h3>
-                <p>Pazartesi-Salı: 07:00-19:00</p>
-                <p>Çarşamba-Perşembe: 07:00-17:00</p>
-                <p>Cuma: 07:00-11:00</p>
+            <h2>İletişim Bilgileri</h2>
+            <div class="contact-details">
+                <span><strong>Adres:</strong> Example Address</span>
+                <span><strong>Telefon:</strong> +90 (216) 123 45 67</span>
+                <span><strong>E-posta:</strong> example@example.com</span>
             </div>
-            <button class="show-form-button" onclick="toggleForm()">Randevu Talebi</button>
-            <div class="appointment-form" id="appointmentForm">
-                <h2>Randevu Talebi Formu</h2>
-                <form action="mailto:example@example.com" method="post" enctype="text/plain">
-                    <label for="name">Adınız:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">E-posta:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Mesaj:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="calendar">
+                <h3>Çalışma Saatlerimiz</h3>
+                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                <p>Cumartesi: 10:00 - 14:00</p>
+            </div>
+        </div>
+        <div class="appointment">
+            <button class="show-form-button" onclick="showForm()">RANDEVU TALEBİ</button>
+            <div class="appointment-form" id="appointment-form">
+                <h2>Randevu Talebi</h2>
+                <form action="">
+                    <input type="text" name="name" placeholder="Adınız" required>
+                    <input type="email" name="email" placeholder="E-posta" required>
+                    <textarea name="message" rows="4" placeholder="Mesajınız" required></textarea>
                     <button type="submit">Gönder</button>
                 </form>
             </div>
-        </div>
-        <div class="map">
-            <!-- Harita yerleştirilecek alan -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="social-media">
-            <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
         </div>
         <div class="contact-details">
-            <p>İstanbul, Türkiye</p>
-            <p>Telefon: (123) 456-7890</p>
-            <p>E-posta: example@example.com</p>
+            <p>Example Address</p>
+            <p>Phone: +90 (216) 123 45 67</p>
         </div>
         <div class="copyright">
-            TELİF HAKKI © 2024 AVUKAT NURAL KILIÇ - TÜM HAKLARI SAKLIDIR.
+            &copy; 2024 Avukat Nural Kılıç - Tüm Hakları Saklıdır.
         </div>
     </footer>
 
     <script>
-        function toggleForm() {
-            var form = document.getElementById('appointmentForm');
-            form.style.display = form.style.display === 'none' || form.style.display === '' ? 'block' : 'none';
+        function showForm() {
+            var form = document.getElementById("appointment-form");
+            if (form.style.display === "block") {
+                form.style.display = "none";
+            } else {
+                form.style.display = "block";
+            }
         }
     </script>
-
 </body>
-</html>
