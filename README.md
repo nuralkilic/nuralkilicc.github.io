@@ -13,7 +13,7 @@
         }
         body {
             margin: 0;
-            font-family: 'Garamond', 'Times New Roman', serif;
+            font-family: 'Garamond', 'Times New Roman', serif; /* Garamond benzeri fontları kullan */
             background-color: #333; /* Füme zemin */
             color: #000080; /* Metin rengi */
             font-size: var(--font-size-small); /* Varsayılan yazı boyutu */
@@ -278,7 +278,7 @@
 
     <!-- Diğer Çalışma Alanlarımız Bölümü -->
     <section class="gallery">
-        <h2>Diğer Çalışma Alanlarımız</h2>
+        <h2>DİĞER ÇALIŞMA ALANLARIMIZ</h2>
         <div class="gallery-container">
             <img src="assets/images/gallery1.jpg" alt="Gallery Image 1">
             <img src="assets/images/gallery2.jpg" alt="Gallery Image 2">
@@ -289,54 +289,48 @@
     <!-- Müracaat Bölümü -->
     <section class="application">
         <div class="contact-info">
-            <h2>İletişim Bilgileri</h2>
+            <h2>MÜRÂCAAT</h2>
+            <p>Randevu taleplerinizi aşağıdaki form aracılığıyla iletebilirsiniz...</p>
             <div class="contact-details">
-                <span><strong>Adres:</strong> Example Address</span>
-                <span><strong>Telefon:</strong> +90 (216) 123 45 67</span>
-                <span><strong>E-posta:</strong> example@example.com</span>
+                <span><strong>Adres:</strong> Örnek Adres</span>
+                <span><strong>Telefon:</strong> +90 123 456 7890</span>
+                <span><strong>E-posta:</strong> nural@example.com</span>
             </div>
             <div class="calendar">
-                <h3>Çalışma Saatlerimiz</h3>
-                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p>Cumartesi: 10:00 - 14:00</p>
+                <h3>Randevu Takvimi</h3>
+                <p>Müsaitlik durumu aşağıdaki tarihlerde kontrol edilebilir...</p>
             </div>
+            <button class="show-form-button" onclick="toggleForm()">RANDEVU TALEBİ</button>
         </div>
-        <div class="appointment">
-            <button class="show-form-button" onclick="showForm()">RANDEVU TALEBİ</button>
-            <div class="appointment-form" id="appointment-form">
-                <h2>Randevu Talebi</h2>
-                <form action="">
-                    <input type="text" name="name" placeholder="Adınız" required>
-                    <input type="email" name="email" placeholder="E-posta" required>
-                    <textarea name="message" rows="4" placeholder="Mesajınız" required></textarea>
-                    <button type="submit">Gönder</button>
-                </form>
-            </div>
+        <div class="appointment-form" id="appointment-form">
+            <h2>Randevu Talebi Formu</h2>
+            <input type="text" placeholder="Adınız Soyadınız">
+            <input type="email" placeholder="E-posta">
+            <textarea placeholder="Mesajınız"></textarea>
+            <button>Gönder</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <div class="footer">
         <div class="social-media">
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>Example Address</p>
-            <p>Phone: +90 (216) 123 45 67</p>
+            <p>İletişim: nural@example.com | +90 123 456 7890</p>
         </div>
         <div class="copyright">
-            &copy; 2024 Avukat Nural Kılıç - Tüm Hakları Saklıdır.
+            &copy; 2024 Avukat Nural Kılıç. Tüm Hakları Saklıdır.
         </div>
-    </footer>
+    </div>
 
     <script>
-        function showForm() {
-            var form = document.getElementById("appointment-form");
-            if (form.style.display === "block") {
-                form.style.display = "none";
+        function toggleForm() {
+            const form = document.getElementById('appointment-form');
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
             } else {
-                form.style.display = "block";
+                form.style.display = 'none';
             }
         }
     </script>
